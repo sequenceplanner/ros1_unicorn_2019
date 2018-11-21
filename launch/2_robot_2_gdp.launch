@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+  
+  <include file="$(find vgto_launch)/launch/custom.launch"/>
+
+   <node name="hrp1_unidriver" pkg="ros1_unicorn_2019" type="hrp1_unidriver.py">
+  </node>
+   <node name="hrp2_unidriver" pkg="ros1_unicorn_2019" type="hrp2_unidriver.py">
+  </node>
+   <node name="hrp_pose_updater" pkg="ros1_unicorn_2019" type="hrp_pose_updater.py">
+  </node>
+
+</launch>
